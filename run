@@ -1,0 +1,5 @@
+#!/bin/sh
+#cd /home/siuyin/prog/go_workspace/src/siuyin/wdotweb
+#exec chpst -u siuyin ./wdotweb
+export SUPERNODE_UDP_PORT=53
+exec  /home/app/supernode/supernode -l $SUPERNODE_UDP_PORT -f
