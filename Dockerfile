@@ -29,6 +29,7 @@ CMD ["/bin/sh","-c", "/home/app/supernode/supernode -l $SUPERNODE_UDP_PORT  -f -
 #ADD run /etc/service/supernode/run
 
 EXPOSE 82/udp
+EXPOSE 8080/udp
 
 ## Install an SSH key
 #ADD config/id_rsa.pub /tmp/your_key
