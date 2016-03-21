@@ -11,6 +11,7 @@ ENV HOME /home/app/supernode
 ENV SUPERNODE_UDP_PORT 82
 RUN mkdir -p /home/app/supernode/
 COPY supernode /home/app/supernode/supernode
+RUN chmod 755 /home/app/supernode/supernode
 
 # Execute the following command by default
 CMD ["/bin/sh","-c", "/home/app/supernode/supernode -l $SUPERNODE_UDP_PORT  -f -v"]
