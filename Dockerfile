@@ -8,7 +8,7 @@ MAINTAINER siuyin@beyondbroadcast.com
 
 # Set correct environment variables.
 ENV HOME /home/app/supernode
-ENV SUPERNODE_UDP_PORT 53
+ENV SUPERNODE_UDP_PORT 82
 RUN mkdir -p /home/app/supernode/
 COPY supernode /home/app/supernode/supernode
 
@@ -26,7 +26,7 @@ CMD ["/bin/sh","-c", "/home/app/supernode/supernode -l $SUPERNODE_UDP_PORT  -f -
 #RUN mkdir -p /etc/service/supernode
 #ADD run /etc/service/supernode/run
 
-EXPOSE 53/udp
+EXPOSE 82/udp
 
 ## Install an SSH key
 #ADD config/id_rsa.pub /tmp/your_key
